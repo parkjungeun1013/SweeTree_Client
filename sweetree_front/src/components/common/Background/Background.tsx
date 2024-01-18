@@ -1,43 +1,20 @@
-import React from 'react';
-import styled,{createGlobalStyle} from 'styled-components';
-import heart from 'src/assets/heart.svg';
-
-
-const BackgroundColor = styled.div`
-background: #fef7e2;
-width: 390px; 
-height: 844px; 
-align-items:center;
-justify-content: center;
-`;
-
-const HeartPos = styled.div`
-background: #fef7e2;
-width: 390px; 
-height: 844px; 
-align-items:center;
-justify-content: center;
-`;
+import React from "react";
+import heart from "src/assets/heart.svg";
+import * as S from "./Background.styled";
 
 interface BackgroundProps {
   children?: React.ReactNode;
 }
 
-const Background: React.FC<BackgroundProps> = ({children})=> {
-    return (
-      <>
-      
-      <BackgroundColor>
-        {children}
-        <HeartPos>
-          <img src= {heart}/>
-        </HeartPos>
-      
-      </BackgroundColor>
-      
-        
-      </>
-    );
-}
+const Background: React.FC<BackgroundProps> = ({ children }) => {
+  return (
+    <S.BackgroundColor>
+      <S.HeartPos>
+        <img src={heart} alt="heart" />
+      </S.HeartPos>
+      {children}
+    </S.BackgroundColor>
+  );
+};
 
 export default Background;
