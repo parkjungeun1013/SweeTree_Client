@@ -1,27 +1,38 @@
-import react from 'react';
-import styled from 'styled-components';
-import Background from 'src/components/common/Background/Background';
-import logo from 'src/assets/logo.svg';
+import logo from "src/assets/logo.svg";
+import { Background } from "src/components/common/Background/Background";
+import * as S from "./LoginPage.styled";
+import { SocialLoginButton } from "src/components/common/Button/socialLoginButton/SocialLoginButton";
 
-const LogoPos = styled.div`
-  max-width: 390px;
-  display:  flex;
-  align-items: center; /* 중앙 정렬로 변경 */
-  justify-content: center;
-  
-`;
+import kakaoLogo from "src/assets/Button/Kakao.svg";
+import googleLogo from "src/assets/Button/Google.svg";
+import naverLogo from "src/assets/Button/Naver.svg";
 
-const LoginPage = () => {
-    return (
-        <>
-        <Background >
-            <LogoPos>
-                <img src={logo}/>
-            </LogoPos>
-        </Background>
-   
-        </>
-    );
-}
+import { SOCIAL_PROVIDER } from "src/constants/SocialProviders";
 
-export default LoginPage;
+export const LoginPage = () => {
+  return (
+    <Background>
+      <S.LogoPos>
+        <img src={logo} alt="logo" />
+      </S.LogoPos>
+      <SocialLoginButton
+        provider={SOCIAL_PROVIDER.KAKAO}
+        logo={kakaoLogo}
+        color={"#FEE500"}
+        textColor={"#000"}
+      />
+      <SocialLoginButton
+        provider={SOCIAL_PROVIDER.GOOGLE}
+        logo={googleLogo}
+        color={"#FFF"}
+        textColor={"#0000008A"}
+      />
+      <SocialLoginButton
+        provider={SOCIAL_PROVIDER.NAVER}
+        logo={naverLogo}
+        color={"#03C75A"}
+        textColor={"#FFF"}
+      />
+    </Background>
+  );
+};
