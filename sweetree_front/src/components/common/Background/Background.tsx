@@ -6,7 +6,7 @@ interface BackgroundProps {
   children?: React.ReactNode;
 }
 
-const Background: React.FC<BackgroundProps> = ({ children }) => {
+export const Background: React.FC<BackgroundProps> = ({ children }) => {
   return (
     <S.BackgroundColor>
       <S.HeartPos>
@@ -16,5 +16,3 @@ const Background: React.FC<BackgroundProps> = ({ children }) => {
     </S.BackgroundColor>
   );
 };
-
-export default Background;
