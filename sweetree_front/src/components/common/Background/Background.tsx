@@ -1,33 +1,40 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled,{createGlobalStyle} from 'styled-components';
 import heart from 'src/assets/heart.svg';
 
 
 const BackgroundColor = styled.div`
-  background: #fef7e2;
-  width: 390px;
-  height: 844px;
-  flex-shrink: 0;
+background: #fef7e2;
+width: 390px; 
+height: 844px; 
+align-items:center;
+justify-content: center;
 `;
 
 const HeartPos = styled.div`
-  position: relative;
-  transform: translate(0%, 12.5%);
+background: #fef7e2;
+width: 390px; 
+height: 844px; 
+align-items:center;
+justify-content: center;
+`;
 
-`
 interface BackgroundProps {
-  children : React.ReactNode;
+  children?: React.ReactNode;
 }
 
-function Background({ children }: BackgroundProps) {
+const Background: React.FC<BackgroundProps> = ({children})=> {
     return (
       <>
-        <BackgroundColor>
-          <HeartPos>
-            <img src= {heart}/>
-          </HeartPos>
-        </BackgroundColor>
-          {children}
+      
+      <BackgroundColor>
+        {children}
+        <HeartPos>
+          <img src= {heart}/>
+        </HeartPos>
+      
+      </BackgroundColor>
+      
         
       </>
     );
