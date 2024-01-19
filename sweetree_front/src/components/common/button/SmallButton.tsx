@@ -4,11 +4,9 @@ import './Button.css';
 interface SmallButtonProps {
   title : string;
 }
-
 function SmallButton(props: SmallButtonProps) {
   return (
-  <button>{props.title}</button>
+    <button className="SmallButton">{props.title}</button>
   )
 }
-
 export default SmallButton;
