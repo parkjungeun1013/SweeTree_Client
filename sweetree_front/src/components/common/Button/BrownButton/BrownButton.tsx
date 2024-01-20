@@ -4,13 +4,13 @@ import * as S from "./BrownButton.styled";
 
 interface BrownButtonProps {
   title : string;
-  width : string;
+  width : number;
 }
 
 export const BrownButton = (props: BrownButtonProps) => {
   return (
     <S.BrownButtonWrapper>
-      <S.BrownButtonStyled width= {props.width}>
+      <S.BrownButtonStyled width = {props.width}>
         <S.BrownButtonContentStyled>
           {props.title}
         </S.BrownButtonContentStyled>

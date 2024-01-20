@@ -11,8 +11,12 @@ export const BrownButtonWrapper = styled.div `
 
 `;
 
-export const BrownButtonStyled = styled.div` /* 이전,다음 버튼 양식 - 완료 버튼은 색 변경 필요 */
-    width:  ${(props) => props.width};
+interface BrownButtonProps {
+    width: number
+}
+
+export const BrownButtonStyled = styled.div<BrownButtonProps>` 
+    width:  ${(props) => props.width}px;
     height: 50px;
     flex-shrink: 0;
 
