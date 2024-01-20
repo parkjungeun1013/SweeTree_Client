@@ -1,11 +1,9 @@
 import logo from "src/assets/logo.svg";
 import { Background } from "src/components/common/Background/Background";
-import * as S from "./Main1Page.styled";
+import * as S from "./MyPage.styled";
 import { BrownButton } from "src/components/common/Button/BrownButton/BrownButton";
 
-
-
-export const Main1Page = () => {
+export const Main1 = () => {
     return (
         <Background>
             <S.LogoPos>
@@ -23,9 +21,8 @@ export const Main1Page = () => {
             title = {"내 초콜릿 상자 만들기"}
             width ={235.266}
             />
-
         </Background>
-        
-        
     )
 }
+
+
