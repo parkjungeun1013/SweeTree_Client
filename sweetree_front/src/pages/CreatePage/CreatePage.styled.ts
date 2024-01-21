@@ -9,8 +9,9 @@ export const LogoPos = styled.div`
   z-index: 10;
 `;
 
-export const TextSytle = styled.div`
+export const TextSytled = styled.div`
   position: relative;
+  margin-bottom:5%;
   display: flex;
   justify-content: center;
   z-index: 10;
@@ -30,3 +31,39 @@ export const SmallBrownButtonWrapper = styled.div`
   justify-content:center;
   gap: 16px;
   `;
+
+export const InputSytledWrapper = styled.div`
+  position: relative;
+  margin-bottom: 84.5%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+
+`;
+
+export const InputSytled = styled.div`
+  position: relative;
+  width: 310px;
+  height: 67px;
+  flex-shrink: 0;
+
+  border-radius: 33px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0px 4px 4px 0px rgba(83, 42, 19, 0.38);
+
+
+`;
+
+export const InputContentStyled = styled.input`
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  border-radius: inherit;
+  background: transparent;
+  outline:none;
+  font-size: 16px;
+  color: #532a13;
+  font-family: "Your Font Family", sans-serif; /* Specify your font family */
+`;
+
