@@ -9,55 +9,44 @@ import Boxes_6 from "../../../assets/Box/Box_6.svg"
 
 
 interface BoxProps{
-    type : number;
-    width :string;
-    height : string;
-    func? : () => void;
+    type: number;
+    width: string;
+    height: string;
+    func?: () => void;
 }
 
 function Box(props : BoxProps){
-    if(props.type == 1){
-        return(
-            <BoxButton  onClick = {props.func}>
-                <img src = {Boxes_1} alt = '박스1' width = {props.width} height={props.height}/>
-            </BoxButton>
-        )
+    let box_src;
+    let box_alt: string ="";
+    if(props.type==1){
+        box_src=Boxes_1;
+        box_alt="BOX1";
     }
-    if(props.type == 2){
-        return(
-            <BoxButton  onClick = {props.func}>
-                <img src = {Boxes_2} alt = '박스2' width = {props.width} height={props.height}/>
-            </BoxButton>
-        )
+    if(props.type==2){
+        box_src=Boxes_2;
+        box_alt="BOX2";
     }
-    if(props.type == 3){
-        return(
-            <BoxButton  onClick = {props.func}>
-                <img src = {Boxes_3} alt = '박스3' width = {props.width} height={props.height}/>
-            </BoxButton>
-        )
+    if(props.type==3){
+        box_src=Boxes_3;
+        box_alt="BOX3";
     }
-    if(props.type == 4){
-        return(
-            <BoxButton  onClick = {props.func}>
-                <img src = {Boxes_4} alt = '박스4' width = {props.width} height={props.height}/>
-            </BoxButton>
-        )
+    if(props.type==4){
+        box_src=Boxes_4;
+        box_alt="BOX4";
     }
-    if(props.type == 5){
-        return(
-            <BoxButton onClick = {props.func}>
-                <img src = {Boxes_5} alt = '박스5' width = {props.width} height={props.height}/>
-            </BoxButton>
-        )
+    if(props.type==5){
+        box_src=Boxes_5;
+        box_alt="BOX5";
     }
-    if(props.type == 6){
-        return(
-            <BoxButton onClick = {props.func}>
-                <img src = {Boxes_6} alt = '박스6' width = {props.width} height={props.height}/>
-            </BoxButton>
-        )
+    if(props.type==6){
+        box_src=Boxes_6;
+        box_alt="BOX6";
     }
+    return(
+        <BoxButton  onClick = {props.func}>
+            <img src={box_src} alt={box_alt} width={props.width} height={props.height}/>
+        </BoxButton>
+    )
 }
 
 const BoxButton = styled.button` 
