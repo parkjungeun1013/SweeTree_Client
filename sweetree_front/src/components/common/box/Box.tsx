@@ -21,27 +21,24 @@ function Box(props : BoxProps){
     if(props.type==1){
         box_src=Boxes_1;
         box_alt="BOX1";
-    }
-    if(props.type==2){
+    }else if(props.type==2){
         box_src=Boxes_2;
         box_alt="BOX2";
-    }
-    if(props.type==3){
+    }else if(props.type==3){
         box_src=Boxes_3;
         box_alt="BOX3";
-    }
-    if(props.type==4){
+    }else if(props.type==4){
         box_src=Boxes_4;
         box_alt="BOX4";
-    }
-    if(props.type==5){
+    }else if(props.type==5){
         box_src=Boxes_5;
         box_alt="BOX5";
-    }
-    if(props.type==6){
+    }else if(props.type==6){
         box_src=Boxes_6;
         box_alt="BOX6";
-    }
+    }else
+    { alert("Box Type Error"); }
+    
     return(
         <BoxButton  onClick = {props.func}>
             <img src={box_src} alt={box_alt} width={props.width} height={props.height}/>
