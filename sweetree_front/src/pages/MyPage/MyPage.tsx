@@ -1,5 +1,5 @@
 import logo from "src/assets/logo.svg";
-import { Background } from "src/components/common/Background/Background";
+import { Background } from "src/components/common/Background/HeartBackground/HeartBackground";
 import * as S from "./MyPage.styled";
 import { BrownButton } from "src/components/common/Button/BrownButton/BrownButton";
 
