@@ -28,6 +28,10 @@ export const BrownButtonStyled = styled.div<BrownButtonProps>`
     border: 2px solid #FEF7E2;
     background: #532A13;
     
+    &:hover {
+        background: #F34381;
+        cursor: pointer;
+    }
 `;
 
 
