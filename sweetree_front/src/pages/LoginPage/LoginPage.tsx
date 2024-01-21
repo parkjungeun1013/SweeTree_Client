@@ -1,5 +1,5 @@
 import logo from "src/assets/logo.svg";
-import { Background } from "src/components/common/Background/Background";
+import { Background } from "src/components/common/Background/HeartBackground/HeartBackground";
 import * as S from "./LoginPage.styled";
 import { SocialLoginButton } from "src/components/common/Button/socialLoginButton/SocialLoginButton";
 
