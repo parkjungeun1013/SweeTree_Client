@@ -32,6 +32,10 @@ export const SmallBrownButtonWrapper = styled.div`
   gap: 16px;
   `;
 
+export const LargeBrownButtonWrapper = styled.div`
+  margin-bottom: 71.9%;
+  `;
+
 export const InputSytledWrapper = styled.div`
   position: relative;
   margin-bottom: 84.5%;
@@ -64,6 +68,6 @@ export const InputContentStyled = styled.input`
   outline:none;
   font-size: 16px;
   color: #532a13;
-  font-family: "Your Font Family", sans-serif; /* Specify your font family */
+  font-family: "Your Font Family", sans-serif; 
 `;
 
