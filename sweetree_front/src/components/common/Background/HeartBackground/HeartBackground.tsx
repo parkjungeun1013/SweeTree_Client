@@ -1,6 +1,6 @@
 import React from "react";
 import heart from "src/assets/heart.svg";
-import * as S from "./Background.styled";
+import * as S from "./HeartBackground.styled";
 
 interface BackgroundProps {
   children?: React.ReactNode;
