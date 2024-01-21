@@ -11,7 +11,7 @@ function App() {
     <Routes>
       <Route path="/login" element={<LoginPage />} />
       <Route path="/mypage" element={<Main1 />} />
-      <Route path = "/create" element = {<Main1_2 />} />
+      <Route path = "/create_box" element = {<Main1_2 />} />
     </Routes>
   );
 }
