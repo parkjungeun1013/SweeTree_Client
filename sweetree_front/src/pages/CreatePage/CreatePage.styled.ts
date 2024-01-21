@@ -24,3 +24,9 @@ export const TextSytle = styled.div`
   line-height: 135%; /* 22.95px */
   letter-spacing: -0.85px;
 `;
+
+export const SmallBrownButtonWrapper = styled.div`
+  display: flex;
+  justify-content:center;
+  gap: 16px;
+  `;

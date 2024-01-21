@@ -7,6 +7,7 @@ export const WhiteRecWrapper = styled.div`
     position: relative;
     margin-top: 5%;
     z-index: 10;
+    margin-bottom: 5%
 `;
 
 interface WhiteRecprops {
