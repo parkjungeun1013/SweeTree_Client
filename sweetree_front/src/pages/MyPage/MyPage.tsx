@@ -1,11 +1,16 @@
 import logo from "src/assets/logo.svg";
-import { Background } from "src/components/common/Background/Background";
-import * as S from "./Main1Page.styled";
+import { Background } from "src/components/common/Background/HeartBackground/HeartBackground";
+import * as S from "./MyPage.styled";
 import { BrownButton } from "src/components/common/Button/BrownButton/BrownButton";
+import {useNavigate} from "react-router-dom";
 
+export const Main1 = () => {
+    const navigate = useNavigate();
 
+    const handleClick= () =>{
+        navigate('/create_box');
+    };
 
-export const Main1Page = () => {
     return (
         <Background>
             <S.LogoPos>
@@ -22,10 +27,10 @@ export const Main1Page = () => {
             <BrownButton 
             title = {"내 초콜릿 상자 만들기"}
             width ={235.266}
+            onClick= {handleClick}
             />
-
         </Background>
-        
-        
     )
 }
+
+
