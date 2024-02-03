@@ -4,7 +4,7 @@ import * as S from "./MyPage.styled";
 import { BrownButton } from "src/components/common/Button/BrownButton/BrownButton";
 import {useNavigate} from "react-router-dom";
 
-export const Main1 = () => {
+export const MyPage = () => {
     const navigate = useNavigate();
 
     const handleClick= () =>{
